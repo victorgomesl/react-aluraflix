@@ -1,0 +1,41 @@
+.header {
+    width: 1433px;
+    height: 125px;
+    position: relative;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    color: white;
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.header img {
+  max-width: 168px;
+  max-height: 40px;
+  vertical-align: middle;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
