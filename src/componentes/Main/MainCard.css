@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap');
+
+.main-card {
+  width: 1356.39px;
+  height: 1482.9px;
+  margin: 0 auto;
+  padding-top: 93px;
+  display: flex;
+  flex-direction: column;
+  gap: 93px;
+  opacity: 1;
+}
+
+.topic {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.topic h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.topic:first-child {
+  height: 435.5px;
+}
+
+.topic:nth-child(2) {
+  height: 431.7px;
+}
+
+.topic:last-child {
+  height: 429.7px;
+}
