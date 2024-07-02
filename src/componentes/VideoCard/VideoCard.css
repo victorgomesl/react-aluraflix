@@ -12,26 +12,22 @@
   width: 100%;
   height: calc(100% -32px);
   object-fit: cover;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
   margin-bottom: -5px;
-  user-select: none;
-  pointer-events: none;
-  -webkit-user-drag: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .video-controls {
   width: 100%;
-  height: 52px;
+  height: 32px;
   background-color: #000;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  padding: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .video-control {
