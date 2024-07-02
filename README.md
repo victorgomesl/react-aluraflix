@@ -30,7 +30,7 @@ O Aluraflix é uma aplicação de streaming de vídeos, onde os usuários podem 
 ## Instalação
 
 1. Clone o repositório do projeto:
-git clone https://github.com/seu-usuario/aluraflix.git
+git clone https://github.com/victorgomesl/react-aluraflix.git
 
 2. Navegue até o diretório do projeto:
 cd aluraflix
