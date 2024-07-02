@@ -1,4 +1,4 @@
-.button {
+.home-button {
   width: 180.13px;
   height: 54px;
   display: flex;
@@ -19,7 +19,7 @@
   color: #ffffff;
 }
 
-.button:hover {
+.home-button:hover {
   background-color: rgba(0, 0, 0, 0.898);
   color: #FFFFFF;
   border: 2px solid #2271D1;
@@ -29,11 +29,29 @@
 }
 
 @media (max-width: 768px) {
-  .add-video-button {
-    background-image: url('../../images/add_video_mobile.png');
+  .home-button {
+    width: 142px;
+    height: 48px;
+    background-color: #0B223E;
+    border: 2px solid #2271D0;
+    border-radius: 50px;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    text-indent: 0;
+  }
+
+  .home-button .icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../images/home_mobile.png');
     background-size: cover;
-    width: 40px;
-    height: 40px;
-    text-indent: -9999px; /* Hide text */
+    margin-right: 10px;
+  }
+
+  .home-button .text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #2271D0;
   }
 }

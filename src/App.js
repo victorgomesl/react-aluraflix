@@ -1,17 +1,19 @@
+import React from 'react';
 import './App.css';
-import Banner from './componentes/Banner/Banner';
-import Footer from './componentes/Footer/Footer';
+import AppRoutes from './AppRoutes';
 import Header from './componentes/Header';
-import MainCard from './componentes/Main/MainCard';
+import Footer from './componentes/Footer/Footer';
+import { VideoProvider } from './context/VideoContext';
 
 function App() {
   return (
+    <VideoProvider>
     <div className="App">
       <Header />
-      <Banner />
-      <MainCard />
+      <AppRoutes />
       <Footer />
     </div>
+    </VideoProvider>
   );
 }
 

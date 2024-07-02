@@ -7,10 +7,19 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: auto;
   }
   
   .footer-logo {
     width: 168.45px;
     height: 40px;
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
   }
   
+  @media (max-width: 768px) {
+    .footer {
+      display: none;
+    }
+  }

@@ -1,10 +1,10 @@
 import React from 'react';
-import './buttons.css';
 import { Link } from 'react-router-dom';
+import './AddVideoButton.css';
 
 function AddVideoButton() {
   return (
-    <Link to="/add-video" className="button">NOVO VÍDEO</Link>
+    <Link to="/novo-video" className="add-video-button">NOVO VÍDEO</Link>
   );
 }
 

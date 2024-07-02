@@ -1,6 +1,7 @@
+// src/componentes/Header/Header.jsx
 import React from 'react';
 import './header.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.png';
 import HomeButton from '../Buttons/HomeButton';
 import AddVideoButton from '../Buttons/AddVideoButton';
 

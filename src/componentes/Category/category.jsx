@@ -10,6 +10,8 @@ function Category({ id, title }) {
         return { backgroundColor: '#00C86F', color: '#F5F5F5' };
       case 3:
         return { backgroundColor: '#FFBA05', color: '#F5F5F5' };
+      case 4:
+        return { backgroundColor: '#e47900', color: '#F5F5F5' };
       default:
         return {};
     }
