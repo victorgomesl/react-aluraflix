@@ -10,15 +10,6 @@
       "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
     },
     {
-      "id": "2",
-      "title": "Titulo para vídeo de Frontend",
-      "category": "frontend",
-      "image": "https://elitecoaching.io/wp-content/uploads/2022/05/Front-End-development-.webp",
-      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
-      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
-      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
-    },
-    {
       "id": "3",
       "title": "Titulo para vídeo de Frontend",
       "category": "frontend",
