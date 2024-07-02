@@ -22,6 +22,7 @@ O Aluraflix é uma aplicação de streaming de vídeos, onde os usuários podem 
 - Styled Components
 - Axios
 - json-server
+- Firebase
 - JavaScript
 - API (GET, PUT, DELETE)
 - Vercel (para deploy)

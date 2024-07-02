@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../utils/api';
+import { addVideo } from '../utils/api';
 import './NovoVideo.css';
 import VideoContext from '../context/VideoContext';
 
@@ -32,9 +32,9 @@ function NovoVideo() {
       setErrors(newErrors);
     } else {
       try {
-        const response = await api.post('/videos', formValues);
-        setVideos([...videos, response.data]);
+        await addVideo(formValues);
         setSuccess('Vídeo adicionado com sucesso!');
+        setVideos([...videos, formValues]);
         setTimeout(() => {
           setSuccess('');
           navigate('/');
@@ -42,7 +42,7 @@ function NovoVideo() {
         setFormValues({ title: '', category: '', image: '', video: '', description: '' });
       } catch (error) {
         console.error('Erro ao adicionar vídeo:', error);
-        setSuccess('Erro ao adicionar vídeo.');
+        setErrors({ submit: 'Falha ao adicionar vídeo' });
       }
       setErrors({});
     }

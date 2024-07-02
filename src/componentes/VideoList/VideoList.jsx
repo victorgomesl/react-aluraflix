@@ -3,7 +3,7 @@ import './VideoList.css';
 import VideoCard from '../VideoCard/VideoCard';
 import Modal from '../Modal/Modal';
 import VideoModal from '../VideoModal/VideoModal';
-import axios from 'axios';
+import { getVideos, addVideo, updateVideo, deleteVideo } from '../../utils/api';
 import VideoContext from '../../context/VideoContext';
 
 function VideoList({ strokeColor, category }) {
@@ -24,7 +24,7 @@ function VideoList({ strokeColor, category }) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/videos/${id}`);
+      await deleteVideo(id);
       const updatedVideos = videos.filter(video => video.id !== id);
       setVideos(updatedVideos);
     } catch (error) {
@@ -72,12 +72,8 @@ function VideoList({ strokeColor, category }) {
     }
 
     try {
-      const response = await axios.put(`http://localhost:3001/videos/${selectedVideo.id}`, {
-        ...formValues,
-        videoUrl: formValues.video
-      });
-      const updatedVideo = response.data;
-      const updatedVideos = videos.map(video => video.id === updatedVideo.id ? updatedVideo : video);
+      await updateVideo(selectedVideo.id, formValues);
+      const updatedVideos = videos.map(video => video.id === selectedVideo.id ? { ...formValues, id: selectedVideo.id } : video);
       setVideos(updatedVideos);
       setSuccessMessage("Vídeo editado com sucesso!");
       setTimeout(() => {
