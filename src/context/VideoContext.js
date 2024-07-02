@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
+import { getVideos as getVideosFromFirebase } from '../utils/api';
 import axios from 'axios';
 
 const VideoContext = createContext();
@@ -8,8 +9,19 @@ export const VideoProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const response = await axios.get('http://localhost:3001/videos');
-      setVideos(response.data);
+      try {
+        let videosData;
+        if (process.env.NODE_ENV === 'development') {
+          const response = await axios.get('http://localhost:3001/videos');
+          videosData = response.data;
+        } else {
+          videosData = await getVideosFromFirebase();
+        }
+        setVideos(videosData);
+      } catch (error) {
+        console.error('Erro ao buscar vídeos:', error);
+        setVideos([]);
+      }
     };
 
     fetchVideos();
