@@ -4,7 +4,7 @@ Projeto desenvolvido para Alura em parceria com a ONE para a turma T6 do curso d
 
 ## Descrição
 
-O Aluraflix é uma aplicação de streaming de vídeos, onde os usuários podem visualizar, adicionar, editar e deletar vídeos organizados por categorias. O projeto foi desenvolvido utilizando React para o frontend e json-server para simular uma API backend.
+O Aluraflix é uma aplicação de streaming de vídeos, onde os usuários podem visualizar, adicionar, editar e deletar vídeos organizados por categorias. O projeto foi desenvolvido utilizando React para o frontend, json-server para simular uma API backend durante o desenvolvimento local, e Firebase Firestore para a produção.
 
 ## Funcionalidades
 
@@ -21,8 +21,8 @@ O Aluraflix é uma aplicação de streaming de vídeos, onde os usuários podem 
 - Redux
 - Styled Components
 - Axios
-- json-server
-- Firebase Firestore
+- json-server (para desenvolvimento local)
+- Firebase Firestore (para produção)
 - JavaScript
 - API (GET, PUT, DELETE)
 - Vercel (para deploy)
